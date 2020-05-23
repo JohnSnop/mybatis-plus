@@ -33,6 +33,17 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.3.1.tmp</version>
         </dependency>
+        <!--mybatis-plus自动生成依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.3.1.tmp</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
         <!--加密组件-->
         <dependency>
             <groupId>com.github.ulisesbocchio</groupId>

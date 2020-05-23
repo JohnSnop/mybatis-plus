@@ -3,6 +3,9 @@ package com.wf.mybatisplus.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wf.mybatisplus.entity.Payment;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * @author wf
@@ -11,4 +14,6 @@ import org.apache.ibatis.annotations.Mapper;
  **/
 // @Mapper
 public interface PaymentMapper extends BaseMapper<Payment> {
+    @Select("select p.* from payment p")
+    List<Payment> listPayment();
 }

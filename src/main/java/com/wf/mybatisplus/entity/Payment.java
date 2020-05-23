@@ -1,6 +1,7 @@
 package com.wf.mybatisplus.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.wf.mybatisplus.enums.StatusEnum;
 import lombok.Data;
 
 import java.util.Date;
@@ -25,4 +26,9 @@ public class Payment {
     private Date createTime;
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
+    @Version
+    private Integer version;
+    private StatusEnum status;
+    // @TableLogic
+    // private Integer deleted;
 }
