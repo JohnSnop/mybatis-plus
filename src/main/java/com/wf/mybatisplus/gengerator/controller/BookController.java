@@ -1,4 +1,4 @@
-package com.wf.mybatisplus.mybatisplus.gengerator.controller;
+package com.wf.mybatisplus.gengerator.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author wf
- * @since 2020-05-23
+ * @since 2020-05-24
  */
 @Controller
 @RequestMapping("/gengerator/book")

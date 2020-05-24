@@ -1,6 +1,6 @@
-package com.wf.mybatisplus.mybatisplus.gengerator.mapper;
+package com.wf.mybatisplus.gengerator.mapper;
 
-import com.wf.mybatisplus.mybatisplus.gengerator.entity.Payment;
+import com.wf.mybatisplus.gengerator.entity.Payment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author wf
- * @since 2020-05-23
+ * @since 2020-05-24
  */
 public interface PaymentMapper extends BaseMapper<Payment> {
 

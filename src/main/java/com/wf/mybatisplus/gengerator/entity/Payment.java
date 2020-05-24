@@ -1,4 +1,4 @@
-package com.wf.mybatisplus.mybatisplus.gengerator.entity;
+package com.wf.mybatisplus.gengerator.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -14,7 +14,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wf
- * @since 2020-05-23
+ * @since 2020-05-24
  */
 @Data
   @EqualsAndHashCode(callSuper = false)

@@ -1,6 +1,6 @@
-package com.wf.mybatisplus.mybatisplus.gengerator.service;
+package com.wf.mybatisplus.gengerator.service;
 
-import com.wf.mybatisplus.mybatisplus.gengerator.entity.Book;
+import com.wf.mybatisplus.gengerator.entity.Book;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author wf
- * @since 2020-05-23
+ * @since 2020-05-24
  */
 public interface BookService extends IService<Book> {
 
