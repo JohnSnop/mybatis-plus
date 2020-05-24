@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr th:each="payment : ${payments}">
+            <td th:text="${payment.id}"></td>
+            <td th:text="${payment.serial}"></td>
+            <td th:text="${payment.version}"></td>
+        </tr>
+    </table>
+</body>
+</html>

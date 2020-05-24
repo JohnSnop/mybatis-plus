@@ -1,14 +1,12 @@
 package com.wf.mybatisplus.mybatisplus;
 
 import com.baomidou.mybatisplus.annotation.DbType;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.PackageConfig;
 import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import org.springframework.beans.factory.annotation.Value;
 
 /**
  * @author wf
@@ -16,8 +14,7 @@ import org.springframework.beans.factory.annotation.Value;
  * @desc
  **/
 public class Main {
-    @Value("${spring.datasource.password}")
-    private static String password;
+
     public static void main(String[] args) {
         AutoGenerator autoGenerator = new AutoGenerator();
         // 数据源配置
@@ -49,6 +46,7 @@ public class Main {
         // 配置策略
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig.setEntityLombokModel(true);
+        // strategyConfig.setInclude("user");
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setColumnNaming(NamingStrategy.underline_to_camel);
         autoGenerator.setStrategy(strategyConfig);
