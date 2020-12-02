@@ -23,7 +23,6 @@ class MybatisPlusApplicationTests {
         String property = environment.getProperty("spring.datasource.password");
         System.out.println(property);
         System.out.println(stringEncryptor.encrypt(property));
-
     }
 
 }
